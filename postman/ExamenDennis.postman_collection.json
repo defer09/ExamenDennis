@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "1552c018-7039-42cc-829a-36b19c6f6b6a",
+		"name": "ExamenDennis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "manga",
+			"item": [
+				{
+					"name": "http://localhost:3000/api/exa/",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGNiNWNjY2IzYjNkNjNjZWZlNzZhNzIiLCJlbWFpbCI6ImZlcjA5dmFyZ2F6QGdtYWlsLmNvbSIsInJvbGVzIjpbInB1YmxpYyJdLCJpYXQiOjE1NzM2MDg2NjEsImV4cCI6MTU3MzYxNDY2MX0.tW14Bd3IXEr5Yzh0nPW_Z_bObt1khpgat8itZVYw5BM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/exa/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"exa",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/exa/",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGNiNWNjY2IzYjNkNjNjZWZlNzZhNzIiLCJlbWFpbCI6ImZlcjA5dmFyZ2F6QGdtYWlsLmNvbSIsInJvbGVzIjpbInB1YmxpYyJdLCJpYXQiOjE1NzM2MTA0ODIsImV4cCI6MTU3MzYxNjQ4Mn0._1IOMTMBr59Go02rXgcvBbQ70SS3fscJBSYrh0VJyGE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "examen",
+									"type": "text"
+								},
+								{
+									"key": "autor",
+									"value": "dennis",
+									"type": "text"
+								},
+								{
+									"key": "paisOrigen",
+									"value": "honduras",
+									"type": "text"
+								},
+								{
+									"key": "numeroTomos",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "keyWords",
+									"value": "Interesante",
+									"type": "text"
+								},
+								{
+									"key": "categorias",
+									"value": "estudiantes",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/exa/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"exa",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/exa/5dcb64fad657fb3dd4abdb7d",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGNiNWNjY2IzYjNkNjNjZWZlNzZhNzIiLCJlbWFpbCI6ImZlcjA5dmFyZ2F6QGdtYWlsLmNvbSIsInJvbGVzIjpbInB1YmxpYyJdLCJpYXQiOjE1NzM2MTA0ODIsImV4cCI6MTU3MzYxNjQ4Mn0._1IOMTMBr59Go02rXgcvBbQ70SS3fscJBSYrh0VJyGE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/exa/5dcb64fad657fb3dd4abdb7d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"exa",
+								"5dcb64fad657fb3dd4abdb7d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/exa/id:5dcb64fad657fb3dd4abdb7d",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGNiNWNjY2IzYjNkNjNjZWZlNzZhNzIiLCJlbWFpbCI6ImZlcjA5dmFyZ2F6QGdtYWlsLmNvbSIsInJvbGVzIjpbInB1YmxpYyJdLCJpYXQiOjE1NzM2MTA0ODIsImV4cCI6MTU3MzYxNjQ4Mn0._1IOMTMBr59Go02rXgcvBbQ70SS3fscJBSYrh0VJyGE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/exa/id:5dcb64fad657fb3dd4abdb7d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"exa",
+								"id:5dcb64fad657fb3dd4abdb7d"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "security",
+			"item": [
+				{
+					"name": "http://localhost:3000/api/sec/new",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "fer09vargaz@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123Abcd#",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/sec//signin?",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sec",
+								"",
+								"signin"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/sec/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/sec/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sec",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/sec/login",
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "fer09vargaz@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "pswd",
+									"value": "123Abcd#",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/sec/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sec",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

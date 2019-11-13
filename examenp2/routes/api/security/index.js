@@ -83,7 +83,7 @@ function initSecurity(db){
             const token = jwt.sign(
                 user,
                 'unexamendelsegundoparcial201903',
-                { expiresIn : '3m'}
+                { expiresIn : '100m'}
             );
             return res.status(200).json({ user, token });
           });

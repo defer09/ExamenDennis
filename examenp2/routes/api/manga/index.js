@@ -34,7 +34,7 @@ function initMangaApi(db){
         "paisOrigen":"",
         "numeroTomos":0,
         "uso":"",
-        "estado": [Ongoing | Completed | Hiatsu |Dicontinued],
+        "estado": [],
         "keyWords":[],
         "categorias":[]
       },
@@ -55,7 +55,7 @@ function initMangaApi(db){
 
   router.put('/:id', (req, res, next)=>{
     var query = {"_id":new ObjectID(req.params.id)};
-    var update = {"$inc":{"views":1, "likes":1}};
+    var update = {"$inc":{'estado': "Completed"}};
 
     mangaColl.updateOne(query, update, (err, rslt)=>{
       if (err) {
