@@ -24,13 +24,13 @@ passport.use(
 
 //Rutas de Cada Entidad
 var mangaApiRoutes = require('./manga/index')(db);
-
-//localhost:3000/api/sec/
-router.use('/exa', mangaApiRoutes);
-
-//Rutas de Cada Entidad
 var securityApiRoutes = require('./security/index')(db);
+//localhost:3000/api/sec/
 
+router.use('/exa',
+    passport.authenticate('jwt', {session:false}),
+    mangaApiRoutes
+);
 //localhost:3000/api/sec/
 router.use('/sec', securityApiRoutes);
 

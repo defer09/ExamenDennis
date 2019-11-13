@@ -1,5 +1,5 @@
 let ObjectId = require('mongodb').ObjectID;
-let bcrypt = require('bcrypt');
+let bcrypt = require('bcryptjs');
 let IndexVerified = false;
 
 function passwordGenerator(password){
